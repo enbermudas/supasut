@@ -1,5 +1,12 @@
 # supasut
 
+## 0.4.0
+
+### Minor Changes
+
+- f6c173e: add a new pack of functions
+- 2fdf722: add groupBy function
+
 ## 0.3.0
 
 ### Minor Changes
