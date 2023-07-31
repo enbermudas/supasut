@@ -1,5 +1,11 @@
 # supasut
 
+## 0.2.0
+
+### Minor Changes
+
+- a67bb59: add uniq function
+
 ## 0.1.1
 
 ### Patch Changes
