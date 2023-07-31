@@ -1,5 +1,6 @@
 import difference from "./difference";
 import intersection from "./intersection";
+import occurrences from "./occurrences";
 import omit from "./omit";
 import pluck from "./pluck";
 import sample from "./sample";
@@ -10,6 +11,7 @@ import uniq from "./uniq";
 export default {
   difference,
   intersection,
+  occurrences,
   omit,
   pluck,
   sample,
