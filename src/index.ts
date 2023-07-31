@@ -5,6 +5,7 @@ import omit from "./omit";
 import pluck from "./pluck";
 import sample from "./sample";
 import shuffle from "./shuffle";
+import toPascalCase from "./toPascalCase";
 import toSnakeCase from "./toSnakeCase";
 import union from "./union";
 import uniq from "./uniq";
@@ -17,6 +18,7 @@ export default {
   pluck,
   sample,
   shuffle,
+  toPascalCase,
   toSnakeCase,
   union,
   uniq,
