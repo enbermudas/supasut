@@ -1,0 +1,12 @@
+coverage/
+.changeset/
+.editorconfig
+.eslintrc.cjs
+.github/
+.prettierrc.json
+.vscode/
+CHANGELOG.md
+jest.config.js
+rollup.config.js
+src/
+tsconfig.json
