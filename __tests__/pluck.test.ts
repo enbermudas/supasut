@@ -1,4 +1,4 @@
-import pluck from "./pluck";
+import pluck from "../src/pluck";
 
 interface Person {
   name: string;
