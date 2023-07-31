@@ -1,10 +1,20 @@
-const typescript = require("@rollup/plugin-typescript");
+const typescript = require("rollup-plugin-typescript2");
+const pkg = require("./package.json");
 
 module.exports = {
   input: "src/index.ts",
-  output: {
-    file: "index.js",
-    format: "cjs",
-  },
-  plugins: [typescript()],
+  output: [
+    {
+      file: pkg.main,
+      format: "es",
+      exports: "named",
+      sourcemap: false,
+    },
+  ],
+  plugins: [
+    typescript({
+      clean: true,
+      tsconfig: "./tsconfig.json",
+    }),
+  ],
 };
