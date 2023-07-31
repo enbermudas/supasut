@@ -7,7 +7,8 @@
   "scripts": {
     "test": "jest --collectCoverage",
     "build": "rollup -c && npm run uglify",
-    "uglify": "uglifyjs dist/index.js -c -m -o dist/index.min.js"
+    "uglify": "uglifyjs dist/index.js -c -m -o dist/index.min.js",
+    "release": "npm run build && changeset publish"
   },
   "keywords": [
     "utiliy"
