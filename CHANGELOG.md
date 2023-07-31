@@ -1,5 +1,19 @@
 # supasut
 
+## 0.3.0
+
+### Minor Changes
+
+- 1f6b7ff: add a new pack of functions:
+
+  difference
+  intersection
+  occurrences
+  sample
+  shuffle
+  union
+  uniq > unique
+
 ## 0.2.0
 
 ### Minor Changes
