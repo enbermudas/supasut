@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --collectCoverage",
-    "build": "rollup -c rollup.config.js"
+    "build": "rollup -c rollup.config.js",
+    "uglify": "uglifyjs index.js -c -m -o index.min.js"
   },
   "keywords": [
     "utiliy"
@@ -29,6 +30,7 @@
     "prettier": "^3.0.0",
     "rollup": "^3.27.0",
     "ts-jest": "^29.1.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "uglify-js": "^3.17.4"
   }
 }
