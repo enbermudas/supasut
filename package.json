@@ -36,5 +36,9 @@
     "tslib": "^2.6.1",
     "typescript": "^5.1.6",
     "uglify-js": "^3.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enbermudas/supasut"
   }
 }
