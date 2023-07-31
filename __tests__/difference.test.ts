@@ -1,6 +1,6 @@
-import difference from "./difference";
+import difference from "../src/difference";
 
-describe("difference function", () => {
+describe("difference", () => {
   it("should find elements present in the first array but not in the second", () => {
     const array1 = [1, 2, 3, 4, 5];
     const array2 = [3, 4, 5, 6, 7];

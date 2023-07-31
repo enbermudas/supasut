@@ -1,6 +1,6 @@
-import uniq from "./uniq";
+import uniq from "../src/uniq";
 
-describe("uniq function", () => {
+describe("uniq", () => {
   it("should return an array with unique elements", () => {
     const numbers = [1, 2, 2, 3, 4, 4, 5];
     const uniqueNumbers = uniq(numbers);

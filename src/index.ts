@@ -1,9 +1,19 @@
+import difference from "./difference";
+import intersection from "./intersection";
 import omit from "./omit";
 import pluck from "./pluck";
+import sample from "./sample";
+import shuffle from "./shuffle";
+import union from "./union";
 import uniq from "./uniq";
 
 export default {
+  difference,
+  intersection,
   omit,
   pluck,
+  sample,
+  shuffle,
+  union,
   uniq,
 };
