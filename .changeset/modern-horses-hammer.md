@@ -1,0 +1,5 @@
+---
+"supasut": patch
+---
+
+updates doc
