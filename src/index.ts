@@ -1,6 +1,7 @@
 import difference from "./difference";
 import groupBy from "./groupBy";
 import intersection from "./intersection";
+import isEmpty from "./isEmpty";
 import occurrences from "./occurrences";
 import omit from "./omit";
 import pluck from "./pluck";
@@ -13,6 +14,7 @@ export default {
   difference,
   groupBy,
   intersection,
+  isEmpty,
   occurrences,
   omit,
   pluck,
