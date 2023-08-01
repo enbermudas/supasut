@@ -4,7 +4,35 @@
 
 [![npm version](https://badge.fury.io/js/supasut.svg)](https://badge.fury.io/js/supasut) [![license](https://img.shields.io/npm/l/supasut.svg)](https://github.com/enbermudas/supasut/blob/main/LICENSE)
 
-Supasut is a lightweight utility library for JavaScript/TypeScript, designed to provide useful functions for common tasks. It aims to simplify your code and improve your development productivity.
+Supasut is a lightweight utility library designed to streamline your code and make it more elegant. It provides a collection of carefully crafted utility functions to handle common tasks efficiently, reducing boilerplate code and making your codebase more readable.
+
+It fully embraces TypeScript, offering comprehensive type definitions for seamless integration with TypeScript projects.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Functions](#functions)
+  - [Arrays](#arrays)
+    - [`average`](#average)
+    - [`difference`](#difference)
+    - [`groupBy`](#groupby)
+    - [`intersection`](#intersection)
+    - [`isEmpty`](#isempty)
+    - [`omit`](#omit)
+    - [`paginate`](#paginate)
+    - [`pluck`](#pluck)
+    - [`sample`](#sample)
+    - [`shuffle`](#shuffle)
+    - [`sortBy`](#sortby)
+    - [`union`](#union)
+    - [`unique`](#unique)
+  - [Number](#number)
+    - [`randomInt`](#randomint)
+  - [Strings](#strings)
+    - [`occurrences`](#occurrences)
+    - [`uuid`](#uuid)
+- [Contribution](#contribution)
+- [License](#license)
 
 ## Installation
 
