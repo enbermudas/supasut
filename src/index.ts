@@ -8,6 +8,7 @@ import paginate from "./paginate";
 import pluck from "./pluck";
 import sample from "./sample";
 import shuffle from "./shuffle";
+import sortBy from "./sortBy";
 import union from "./union";
 import unique from "./unique";
 
@@ -22,6 +23,7 @@ export default {
   pluck,
   sample,
   shuffle,
+  sortBy,
   union,
   unique,
 };
