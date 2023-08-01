@@ -7,6 +7,7 @@ import occurrences from "./occurrences";
 import omit from "./omit";
 import paginate from "./paginate";
 import pluck from "./pluck";
+import randomInt from "./randomInt";
 import sample from "./sample";
 import shuffle from "./shuffle";
 import sortBy from "./sortBy";
@@ -24,6 +25,7 @@ export default {
   omit,
   paginate,
   pluck,
+  randomInt,
   sample,
   shuffle,
   sortBy,

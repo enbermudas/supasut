@@ -205,7 +205,19 @@ const unique = supasut.unique(arr);
 console.log(unique); // [1, 2, 3, 4, 5]
 ```
 
-#### Strings
+### Number
+
+#### `randomInt`
+
+```js
+const min = 1;
+const max = 100;
+const randomNumber = supasut.randomInt(min, max);
+
+console.log(randomNumber); // A random integer between 1 and 100 (inclusive)
+```
+
+### Strings
 
 #### `occurrences`
 
@@ -218,6 +230,16 @@ const substring = "lorem";
 const occurrences = supasut.occurrences(str, substring);
 
 console.log(occurrences); // 1
+```
+
+#### `uuid`
+
+Generates a universally unique identifier (UUID) that complies with RFC 4122.
+
+```js
+const uuid = supasut.uuid();
+
+console.log(uuid); // e.g., "f47ac10b-58cc-4372-a567-0e02b2c3d479"
 ```
 
 ## Contribution
