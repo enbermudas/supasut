@@ -30,6 +30,7 @@ It fully embraces TypeScript, offering comprehensive type definitions for seamle
     - [`randomInt`](#randomint)
   - [Strings](#strings)
     - [`occurrences`](#occurrences)
+    - [`randomColor`](#randomColor)
     - [`uuid`](#uuid)
 - [Contribution](#contribution)
 - [License](#license)
@@ -258,6 +259,16 @@ const substring = "lorem";
 const occurrences = supasut.occurrences(str, substring);
 
 console.log(occurrences); // 1
+```
+
+#### randomColor
+
+Generates a random color in the specified format.
+
+```js
+const randomColor = getRandomColor("hsl");
+
+console.log(randomColor); // e.g., "hsl(123.45, 67%, 89%)" (random color in HSL format)
 ```
 
 #### `uuid`

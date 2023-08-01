@@ -1,4 +1,4 @@
-import difference from "../src/difference";
+import difference from "../../src/arrays/difference";
 
 describe("difference", () => {
   it("should find elements present in the first array but not in the second", () => {

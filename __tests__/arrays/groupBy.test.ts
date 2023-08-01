@@ -1,4 +1,4 @@
-import groupBy from "../src/groupBy";
+import groupBy from "../../src/arrays/groupBy";
 
 describe("groupBy", () => {
   it("should group objects by the specified key", () => {

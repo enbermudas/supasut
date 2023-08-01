@@ -1,4 +1,4 @@
-import occurrences from "../src/occurrences";
+import occurrences from "../../src/strings/occurrences";
 
 describe("occurrences", () => {
   it("should count the number of occurrences of the substring in the string", () => {

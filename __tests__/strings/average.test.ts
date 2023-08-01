@@ -1,4 +1,4 @@
-import average from "../src/average";
+import average from "../../src/arrays/average";
 
 describe("average", () => {
   const data = [

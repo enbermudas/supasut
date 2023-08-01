@@ -1,4 +1,4 @@
-import omit from "../src/omit";
+import omit from "../../src/arrays/omit";
 
 describe("omit", () => {
   it("should omit specified values from the array", () => {

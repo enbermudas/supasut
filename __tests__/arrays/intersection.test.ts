@@ -1,4 +1,4 @@
-import intersection from "../src/intersection";
+import intersection from "../../src/arrays/intersection";
 
 describe("intersection", () => {
   it("should find common elements between two number arrays", () => {

@@ -1,4 +1,4 @@
-import sample from "../src/sample";
+import sample from "../../src/arrays/sample";
 
 describe("sample", () => {
   it("should return a random sample of elements from the array", () => {

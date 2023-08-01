@@ -5,7 +5,7 @@
  * @param {number} max - The maximum value of the range (inclusive).
  * @returns {number} - A random integer between `min` and `max`.
  */
-function randomInt(min: number, max: number): number {
+function int(min: number, max: number): number {
   if (!Number.isInteger(min) || !Number.isInteger(max)) {
     throw new Error("Both `min` and `max` must be integers.");
   }
@@ -17,4 +17,4 @@ function randomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export default randomInt;
+export default int;
