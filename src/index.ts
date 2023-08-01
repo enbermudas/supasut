@@ -4,6 +4,7 @@ import intersection from "./intersection";
 import isEmpty from "./isEmpty";
 import occurrences from "./occurrences";
 import omit from "./omit";
+import paginate from "./paginate";
 import pluck from "./pluck";
 import sample from "./sample";
 import shuffle from "./shuffle";
@@ -17,6 +18,7 @@ export default {
   isEmpty,
   occurrences,
   omit,
+  paginate,
   pluck,
   sample,
   shuffle,
