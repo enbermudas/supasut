@@ -1,5 +1,16 @@
 # supasut
 
+## 0.5.0
+
+### Minor Changes
+
+- cfc6320: add new utility functions (for arrays)
+
+  isEmpty
+  paginate
+  sortBy
+  average
+
 ## 0.4.1
 
 ### Patch Changes
