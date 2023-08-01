@@ -16,6 +16,23 @@ npm install supasut # yarn add supasut
 
 ### Arrays
 
+#### `average`
+
+Calculates the average value of a provided array with objects based on a specified key.
+
+```js
+const data = [
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Charlie", age: 40 },
+  { name: "David", age: 35 },
+];
+
+const avgAge = supasut.average(data, "age");
+
+console.log(avgAge); // 32.5
+```
+
 #### `difference`
 
 Retrieves elements that are present in one array but not in another.
@@ -64,6 +81,18 @@ const intersection = supasut.intersection(arr1, arr2);
 console.log(intersection); // [3, 4, 5]
 ```
 
+#### `isEmpty`
+
+Checks if an array is empty.
+
+```js
+const emptyArray = [];
+const nonEmptyArray = [1, 2, 3];
+
+console.log(supasut.isEmpty(emptyArray)); // true
+console.log(supasut.isEmpty(nonEmptyArray)); // false
+```
+
 #### `omit`
 
 Creates a new array by omitting specified values from the original array.
@@ -75,6 +104,18 @@ const valuesToOmit = [2, 4];
 const omitted = supasut.omit(originalArray, ...valuesToOmit);
 
 console.log(omitted); // [1, 3, 5]
+```
+
+#### `paginate`
+
+Splits an array into smaller arrays to implement pagination in a UI.
+
+```js
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const paginated = supasut.paginate(array, 3);
+
+console.log(paginated); // [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
 ```
 
 #### `pluck`
@@ -115,6 +156,29 @@ const arr = [1, 2, 3, 4, 5];
 const shuffled = supasut.shuffle(arr);
 
 console.log(shuffled); // e.g., [3, 2, 5, 1, 4]
+```
+
+#### `sortBy`
+
+Creates a new array with the objects sorted based on a specific property.
+
+```js
+const data = [
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Charlie", age: 40 },
+  { name: "David", age: 35 },
+];
+
+const sortedByAge = supasut.sortBy(data, "age");
+
+console.log(sortedByAge);
+// [
+//   { name: 'Bob', age: 25 },
+//   { name: 'Alice', age: 30 },
+//   { name: 'David', age: 35 },
+//   { name: 'Charlie', age: 40 },
+// ]
 ```
 
 #### `union`
