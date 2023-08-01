@@ -1,3 +1,4 @@
+import average from "./average";
 import difference from "./difference";
 import groupBy from "./groupBy";
 import intersection from "./intersection";
@@ -13,6 +14,7 @@ import union from "./union";
 import unique from "./unique";
 
 export default {
+  average,
   difference,
   groupBy,
   intersection,
