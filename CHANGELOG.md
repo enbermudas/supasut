@@ -1,5 +1,11 @@
 # supasut
 
+## 0.4.1
+
+### Patch Changes
+
+- e5e3236: updates doc
+
 ## 0.4.0
 
 ### Minor Changes
