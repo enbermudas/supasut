@@ -12,6 +12,7 @@ import shuffle from "./shuffle";
 import sortBy from "./sortBy";
 import union from "./union";
 import unique from "./unique";
+import uuid from "./uuid";
 
 export default {
   average,
@@ -28,4 +29,5 @@ export default {
   sortBy,
   union,
   unique,
+  uuid,
 };
