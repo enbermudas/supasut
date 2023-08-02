@@ -15,6 +15,8 @@ import unique from "./arrays/unique";
 import clamp from "./numbers/clamp";
 import int from "./numbers/int";
 
+import merge from "./objects/merge";
+
 import occurrences from "./strings/occurrences";
 import color from "./strings/color";
 import uuid from "./strings/uuid";
@@ -37,6 +39,8 @@ export default {
   // numbers
   clamp,
   int,
+  // objects
+  merge,
   // strings
   occurrences,
   color,

@@ -29,6 +29,8 @@ It fully embraces TypeScript, offering comprehensive type definitions for seamle
   - [Number](#number)
     - [`clamp`](#clamp)
     - [`int`](#int)
+  - [Objects](#objects)
+    - [`merge`](#merge)
   - [Strings](#strings)
     - [`occurrences`](#occurrences)
     - [`color`](#color)
@@ -258,6 +260,22 @@ const max = 100;
 const randomNumber = supasut.int(min, max);
 
 console.log(randomNumber); // A random integer between 1 and 100 (inclusive)
+```
+
+### Objects
+
+#### `merge`
+
+Merges two or more objects into a new object.
+
+```js
+const obj1 = { name: "John", age: 30 };
+const obj2 = { country: "USA", occupation: "Engineer" };
+
+const mergedObject = merge(obj1, obj2);
+
+console.log(mergedObject);
+// { name: "John", age: 30, country: "USA", occupation: "Engineer" }
 ```
 
 ### Strings
