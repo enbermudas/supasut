@@ -1,4 +1,4 @@
-import paginate from "../src/paginate";
+import paginate from "../../src/arrays/paginate";
 
 describe("paginate", () => {
   it("should return an array with the correct number of pages", () => {

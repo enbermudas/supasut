@@ -1,4 +1,4 @@
-import union from "../src/union";
+import union from "../../src/arrays/union";
 
 describe("union", () => {
   it("should return an array with unique elements from multiple arrays", () => {

@@ -1,25 +1,33 @@
-import average from "./average";
-import difference from "./difference";
-import groupBy from "./groupBy";
-import intersection from "./intersection";
-import isEmpty from "./isEmpty";
-import occurrences from "./occurrences";
-import omit from "./omit";
-import paginate from "./paginate";
-import pluck from "./pluck";
-import sample from "./sample";
-import shuffle from "./shuffle";
-import sortBy from "./sortBy";
-import union from "./union";
-import unique from "./unique";
+import average from "./arrays/average";
+import difference from "./arrays/difference";
+import groupBy from "./arrays/groupBy";
+import intersection from "./arrays/intersection";
+import isEmpty from "./arrays/isEmpty";
+import omit from "./arrays/omit";
+import paginate from "./arrays/paginate";
+import pluck from "./arrays/pluck";
+import sample from "./arrays/sample";
+import shuffle from "./arrays/shuffle";
+import sortBy from "./arrays/sortBy";
+import union from "./arrays/union";
+import unique from "./arrays/unique";
+
+import clamp from "./numbers/clamp";
+import int from "./numbers/int";
+
+import merge from "./objects/merge";
+
+import occurrences from "./strings/occurrences";
+import color from "./strings/color";
+import uuid from "./strings/uuid";
 
 export default {
+  // arrays
   average,
   difference,
   groupBy,
   intersection,
   isEmpty,
-  occurrences,
   omit,
   paginate,
   pluck,
@@ -28,4 +36,13 @@ export default {
   sortBy,
   union,
   unique,
+  // numbers
+  clamp,
+  int,
+  // objects
+  merge,
+  // strings
+  occurrences,
+  color,
+  uuid,
 };

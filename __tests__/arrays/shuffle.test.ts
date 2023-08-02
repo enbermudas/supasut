@@ -1,4 +1,4 @@
-import shuffle from "../src/shuffle";
+import shuffle from "../../src/arrays/shuffle";
 
 describe("shuffle", () => {
   it("should return a shuffled version of the array", () => {

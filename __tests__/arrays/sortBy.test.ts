@@ -1,4 +1,4 @@
-import sortBy from "../src/sortBy";
+import sortBy from "../../src/arrays/sortBy";
 
 describe("sortBy", () => {
   const data = [

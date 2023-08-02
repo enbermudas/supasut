@@ -1,4 +1,4 @@
-import unique from "../src/unique";
+import unique from "../../src/arrays/unique";
 
 describe("unique", () => {
   it("should return an array with unique elements", () => {

@@ -10,6 +10,6 @@
     "esModuleInterop": true,
     "declaration": true
   },
-  "include": ["src", "__tests__/difference.test.ts"],
+  "include": ["src", "__tests__/arrays/difference.test.ts"],
   "exclude": ["**/*.test.ts"]
 }

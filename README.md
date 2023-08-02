@@ -4,7 +4,39 @@
 
 [![npm version](https://badge.fury.io/js/supasut.svg)](https://badge.fury.io/js/supasut) [![license](https://img.shields.io/npm/l/supasut.svg)](https://github.com/enbermudas/supasut/blob/main/LICENSE)
 
-Supasut is a lightweight utility library for JavaScript/TypeScript, designed to provide useful functions for common tasks. It aims to simplify your code and improve your development productivity.
+Supasut is a lightweight utility library designed to streamline your code and make it more elegant. It provides a collection of carefully crafted utility functions to handle common tasks efficiently, reducing boilerplate code and making your codebase more readable.
+
+It fully embraces TypeScript, offering comprehensive type definitions for seamless integration with TypeScript projects.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Functions](#functions)
+  - [Arrays](#arrays)
+    - [`average`](#average)
+    - [`difference`](#difference)
+    - [`groupBy`](#groupby)
+    - [`intersection`](#intersection)
+    - [`isEmpty`](#isempty)
+    - [`omit`](#omit)
+    - [`paginate`](#paginate)
+    - [`pluck`](#pluck)
+    - [`sample`](#sample)
+    - [`shuffle`](#shuffle)
+    - [`sortBy`](#sortby)
+    - [`union`](#union)
+    - [`unique`](#unique)
+  - [Numbers](#numbers)
+    - [`clamp`](#clamp)
+    - [`int`](#int)
+  - [Objects](#objects)
+    - [`merge`](#merge)
+  - [Strings](#strings)
+    - [`color`](#color)
+    - [`occurrences`](#occurrences)
+    - [`uuid`](#uuid)
+- [Contribution](#contribution)
+- [License](#license)
 
 ## Installation
 
@@ -190,6 +222,7 @@ const arr1 = [1, 2, 3];
 const arr2 = [3, 4, 5];
 
 const union = supasut.union(arr1, arr2);
+
 console.log(union); // [1, 2, 3, 4, 5]
 ```
 
@@ -205,7 +238,57 @@ const unique = supasut.unique(arr);
 console.log(unique); // [1, 2, 3, 4, 5]
 ```
 
-#### Strings
+### Number
+
+#### `clamp`
+
+```js
+const min = 1;
+const max = 100;
+
+const randomNumber = supasut.clamp(50, min, max);
+
+console.log(randomNumber); // Output: 50 (as 50 is within the range 1 to 100)
+```
+
+#### `int`
+
+```js
+const min = 1;
+const max = 100;
+
+const randomNumber = supasut.int(min, max);
+
+console.log(randomNumber); // A random integer between 1 and 100 (inclusive)
+```
+
+### Objects
+
+#### `merge`
+
+Merges two or more objects into a new object.
+
+```js
+const obj1 = { name: "John", age: 30 };
+const obj2 = { country: "USA", occupation: "Engineer" };
+
+const mergedObject = merge(obj1, obj2);
+
+console.log(mergedObject);
+// { name: "John", age: 30, country: "USA", occupation: "Engineer" }
+```
+
+### Strings
+
+#### color
+
+Generates a random color in the specified format.
+
+```js
+const hslColor = color("hsl");
+
+console.log(hslColor); // e.g., "hsl(123.45, 67%, 89%)" (random color in HSL format)
+```
 
 #### `occurrences`
 
@@ -218,6 +301,16 @@ const substring = "lorem";
 const occurrences = supasut.occurrences(str, substring);
 
 console.log(occurrences); // 1
+```
+
+#### `uuid`
+
+Generates a universally unique identifier (UUID) that complies with RFC 4122.
+
+```js
+const uuid = supasut.uuid();
+
+console.log(uuid); // e.g., "f47ac10b-58cc-4372-a567-0e02b2c3d479"
 ```
 
 ## Contribution

@@ -1,4 +1,4 @@
-import isEmpty from "../src/isEmpty";
+import isEmpty from "../../src/arrays/isEmpty";
 
 describe("isEmpty", () => {
   it("should return true for an empty array", () => {
