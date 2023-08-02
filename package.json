@@ -5,10 +5,12 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "test": "jest --collectCoverage",
-    "build": "rollup -c && npm run uglify",
+    "build": "rollup -c && pnpm uglify",
     "uglify": "uglifyjs dist/index.js -c -m -o dist/index.min.js",
-    "release": "npm run build && changeset publish"
+    "release": "pnpm build && changeset publish",
+    "lint": "eslint"
   },
   "keywords": [
     "utiliy"
@@ -23,6 +25,7 @@
     "@babel/preset-typescript": "^7.22.5",
     "@changesets/cli": "^2.26.2",
     "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.46.0",

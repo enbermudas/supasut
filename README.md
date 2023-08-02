@@ -1,6 +1,6 @@
 # Supasut
 
-> A utility library made with Love.
+> The utility library made with Love.
 
 [![npm version](https://badge.fury.io/js/supasut.svg)](https://badge.fury.io/js/supasut) [![license](https://img.shields.io/npm/l/supasut.svg)](https://github.com/enbermudas/supasut/blob/main/LICENSE)
 
@@ -41,7 +41,9 @@ It fully embraces TypeScript, offering comprehensive type definitions for seamle
 ## Installation
 
 ```bash
-npm install supasut # yarn add supasut
+npm install supasut
+# yarn add supasut
+# pnpm add supasut
 ```
 
 ## Functions
@@ -280,7 +282,7 @@ console.log(mergedObject);
 
 ### Strings
 
-#### color
+#### `color`
 
 Generates a random color in the specified format.
 
