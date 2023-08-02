@@ -1,5 +1,12 @@
 # supasut
 
+## 0.6.1
+
+### Patch Changes
+
+- d2e16ca: replaces npm for pnpm
+- 10ac656: fix github workflow
+
 ## 0.6.0
 
 ### Minor Changes
