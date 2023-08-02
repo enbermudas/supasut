@@ -1,5 +1,19 @@
 # supasut
 
+## 0.6.0
+
+### Minor Changes
+
+- 3722f20: add new functions
+
+  objects:
+  merge
+  numbers:
+  clamp
+  int
+  strings:
+  uuid
+
 ## 0.5.0
 
 ### Minor Changes
