@@ -26,14 +26,14 @@ It fully embraces TypeScript, offering comprehensive type definitions for seamle
     - [`sortBy`](#sortby)
     - [`union`](#union)
     - [`unique`](#unique)
-  - [Number](#number)
+  - [Numbers](#numbers)
     - [`clamp`](#clamp)
     - [`int`](#int)
   - [Objects](#objects)
     - [`merge`](#merge)
   - [Strings](#strings)
-    - [`occurrences`](#occurrences)
     - [`color`](#color)
+    - [`occurrences`](#occurrences)
     - [`uuid`](#uuid)
 - [Contribution](#contribution)
 - [License](#license)
@@ -280,6 +280,16 @@ console.log(mergedObject);
 
 ### Strings
 
+#### color
+
+Generates a random color in the specified format.
+
+```js
+const hslColor = color("hsl");
+
+console.log(hslColor); // e.g., "hsl(123.45, 67%, 89%)" (random color in HSL format)
+```
+
 #### `occurrences`
 
 Counts the number of occurrences of a substring in the string.
@@ -291,16 +301,6 @@ const substring = "lorem";
 const occurrences = supasut.occurrences(str, substring);
 
 console.log(occurrences); // 1
-```
-
-#### color
-
-Generates a random color in the specified format.
-
-```js
-const hslColor = color("hsl");
-
-console.log(hslColor); // e.g., "hsl(123.45, 67%, 89%)" (random color in HSL format)
 ```
 
 #### `uuid`
