@@ -27,10 +27,11 @@ It fully embraces TypeScript, offering comprehensive type definitions for seamle
     - [`union`](#union)
     - [`unique`](#unique)
   - [Number](#number)
-    - [`randomInt`](#randomint)
+    - [`clamp`](#clamp)
+    - [`int`](#int)
   - [Strings](#strings)
     - [`occurrences`](#occurrences)
-    - [`randomColor`](#randomColor)
+    - [`color`](#color)
     - [`uuid`](#uuid)
 - [Contribution](#contribution)
 - [License](#license)
@@ -219,6 +220,7 @@ const arr1 = [1, 2, 3];
 const arr2 = [3, 4, 5];
 
 const union = supasut.union(arr1, arr2);
+
 console.log(union); // [1, 2, 3, 4, 5]
 ```
 
@@ -236,12 +238,24 @@ console.log(unique); // [1, 2, 3, 4, 5]
 
 ### Number
 
-#### `randomInt`
+#### `clamp`
 
 ```js
 const min = 1;
 const max = 100;
-const randomNumber = supasut.randomInt(min, max);
+
+const randomNumber = supasut.clamp(50, min, max);
+
+console.log(randomNumber); // Output: 50 (as 50 is within the range 1 to 100)
+```
+
+#### `int`
+
+```js
+const min = 1;
+const max = 100;
+
+const randomNumber = supasut.int(min, max);
 
 console.log(randomNumber); // A random integer between 1 and 100 (inclusive)
 ```
@@ -261,14 +275,14 @@ const occurrences = supasut.occurrences(str, substring);
 console.log(occurrences); // 1
 ```
 
-#### randomColor
+#### color
 
 Generates a random color in the specified format.
 
 ```js
-const randomColor = getRandomColor("hsl");
+const hslColor = color("hsl");
 
-console.log(randomColor); // e.g., "hsl(123.45, 67%, 89%)" (random color in HSL format)
+console.log(hslColor); // e.g., "hsl(123.45, 67%, 89%)" (random color in HSL format)
 ```
 
 #### `uuid`

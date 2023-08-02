@@ -12,6 +12,7 @@ import sortBy from "./arrays/sortBy";
 import union from "./arrays/union";
 import unique from "./arrays/unique";
 
+import clamp from "./numbers/clamp";
 import int from "./numbers/int";
 
 import occurrences from "./strings/occurrences";
@@ -34,6 +35,7 @@ export default {
   union,
   unique,
   // numbers
+  clamp,
   int,
   // strings
   occurrences,
