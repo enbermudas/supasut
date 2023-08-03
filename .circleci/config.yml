@@ -4,7 +4,7 @@ orbs:
   node: circlceci/node@5.1.0
 
 jobs:
-  build-and-test:
+  test:
     docker:
       - image: node:18
     resource_class: large
@@ -37,4 +37,4 @@ jobs:
 workflows:
   ci-workflow:
     jobs:
-      - build-and-test
+      - test
