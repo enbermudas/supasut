@@ -1,0 +1,37 @@
+version: 2.1
+jobs:
+  test:
+    docker:
+      - image: node:18
+
+    working_directory: ~/project
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: project-dependencies-{{ checksum "pnpm-lock.yaml" }}
+
+      - run:
+          name: Install Dependencies
+          command: |
+            npm install -g pnpm
+            pnpm install
+
+      - save_cache:
+          key: project-dependencies-{{ checksum "pnpm-lock.yaml" }}
+          paths:
+            - ~/.pnpm-store
+
+      - run:
+          name: Run Tests
+          command: pnpm test
+
+      - store_test_results:
+          path: ~/project/test-results
+
+workflows:
+  version: 2
+  testing:
+    jobs:
+      - test
