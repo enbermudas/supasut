@@ -1,8 +1,8 @@
 # Supasut
 
-> The utility library made with Love.
+> A utility library made with love.
 
-[![npm version](https://badge.fury.io/js/supasut.svg)](https://badge.fury.io/js/supasut) [![enbermudas](https://circleci.com/gh/enbermudas/supasut.svg?style=shield)](https://app.circleci.com/pipelines/github/enbermudas/supasut) [![license](https://img.shields.io/npm/l/supasut.svg)](https://github.com/enbermudas/supasut/blob/main/LICENSE)
+[![npm version](https://badge.fury.io/js/supasut.svg)](https://badge.fury.io/js/supasut) [![enbermudas](https://circleci.com/gh/enbermudas/supasut.svg?style=shield)](https://app.circleci.com/pipelines/github/enbermudas/supasut) ![ts](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label) [![license](https://img.shields.io/npm/l/supasut.svg)](https://github.com/enbermudas/supasut/blob/main/LICENSE)
 
 Supasut is a lightweight utility library designed to streamline your code and make it more elegant. It provides a collection of carefully crafted utility functions to handle common tasks efficiently, reducing boilerplate code and making your codebase more readable.
 
