@@ -11,6 +11,7 @@ import shuffle from "./arrays/shuffle";
 import sortBy from "./arrays/sortBy";
 import union from "./arrays/union";
 import unique from "./arrays/unique";
+import zip from "./arrays/zip";
 
 import clamp from "./numbers/clamp";
 import currency from "./numbers/currency";
@@ -37,6 +38,7 @@ export default {
   sortBy,
   union,
   unique,
+  zip,
   // numbers
   clamp,
   currency,

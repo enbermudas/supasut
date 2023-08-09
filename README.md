@@ -26,6 +26,7 @@ It fully embraces TypeScript, offering comprehensive type definitions for seamle
     - [`sortBy`](#sortby)
     - [`union`](#union)
     - [`unique`](#unique)
+    - [`zip`](#zip)
   - [Numbers](#numbers)
     - [`clamp`](#clamp)
     - [`currency`](#currency)
@@ -241,6 +242,21 @@ const unique = supasut.unique(arr);
 console.log(unique); // [1, 2, 3, 4, 5]
 ```
 
+#### `zip`
+
+Combines multiple arrays element-wise into an array of tuples.
+
+```js
+const array1 = [1, 2, 3];
+const array2 = ["a", "b", "c"];
+const array3 = [true, false, true];
+
+const result = supasut.zip(array1, array2, array3);
+
+console.log(result);
+// [[1, "a", true], [2, "b", false], [3, "c", true]]
+```
+
 ### Number
 
 #### `clamp`
@@ -263,7 +279,7 @@ Formats a number as a currency string.
 ```js
 const price = 1234567.89;
 
-const formattedPrice = currency(price, ".", ",");
+const formattedPrice = supasut.currency(price, ".", ",");
 
 console.log(formattedPrice); // "1.234.567,89"
 ```
@@ -291,7 +307,7 @@ Merges two or more objects into a new object.
 const obj1 = { name: "John", age: 30 };
 const obj2 = { country: "USA", occupation: "Engineer" };
 
-const mergedObject = merge(obj1, obj2);
+const mergedObject = supasut.merge(obj1, obj2);
 
 console.log(mergedObject);
 // { name: "John", age: 30, country: "USA", occupation: "Engineer" }
@@ -304,7 +320,7 @@ console.log(mergedObject);
 Generates a random color in the specified format.
 
 ```js
-const hslColor = color("hsl");
+const hslColor = supasut.color("hsl");
 
 console.log(hslColor); // e.g., "hsl(123.45, 67%, 89%)" (random color in HSL format)
 ```
