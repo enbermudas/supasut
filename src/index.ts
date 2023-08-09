@@ -13,6 +13,7 @@ import union from "./arrays/union";
 import unique from "./arrays/unique";
 
 import clamp from "./numbers/clamp";
+import currency from "./numbers/currency";
 import int from "./numbers/int";
 
 import merge from "./objects/merge";
@@ -38,6 +39,7 @@ export default {
   unique,
   // numbers
   clamp,
+  currency,
   int,
   // objects
   merge,

@@ -28,6 +28,7 @@ It fully embraces TypeScript, offering comprehensive type definitions for seamle
     - [`unique`](#unique)
   - [Numbers](#numbers)
     - [`clamp`](#clamp)
+    - [`currency`](#currency)
     - [`int`](#int)
   - [Objects](#objects)
     - [`merge`](#merge)
@@ -244,16 +245,32 @@ console.log(unique); // [1, 2, 3, 4, 5]
 
 #### `clamp`
 
+Clamps a number within a specified range.
+
 ```js
 const min = 1;
 const max = 100;
 
 const randomNumber = supasut.clamp(50, min, max);
 
-console.log(randomNumber); // Output: 50 (as 50 is within the range 1 to 100)
+console.log(randomNumber); // 50 (as 50 is within the range 1 to 100)
+```
+
+#### `currency`
+
+Formats a number as a currency string.
+
+```js
+const price = 1234567.89;
+
+const formattedPrice = currency(price, ".", ",");
+
+console.log(formattedPrice); // "1.234.567,89"
 ```
 
 #### `int`
+
+Generates a random integer within a specified range.
 
 ```js
 const min = 1;
