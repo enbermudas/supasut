@@ -1,8 +1,8 @@
 # Supasut
 
-> The utility library made with Love.
+> A utility library made with love.
 
-[![npm version](https://badge.fury.io/js/supasut.svg)](https://badge.fury.io/js/supasut) [![enbermudas](https://circleci.com/gh/enbermudas/supasut.svg?style=shield)](https://app.circleci.com/pipelines/github/enbermudas/supasut) [![license](https://img.shields.io/npm/l/supasut.svg)](https://github.com/enbermudas/supasut/blob/main/LICENSE)
+[![npm version](https://badge.fury.io/js/supasut.svg)](https://badge.fury.io/js/supasut) [![enbermudas](https://circleci.com/gh/enbermudas/supasut.svg?style=shield)](https://app.circleci.com/pipelines/github/enbermudas/supasut) ![ts](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label) [![license](https://img.shields.io/npm/l/supasut.svg)](https://github.com/enbermudas/supasut/blob/main/LICENSE)
 
 Supasut is a lightweight utility library designed to streamline your code and make it more elegant. It provides a collection of carefully crafted utility functions to handle common tasks efficiently, reducing boilerplate code and making your codebase more readable.
 
@@ -26,8 +26,10 @@ It fully embraces TypeScript, offering comprehensive type definitions for seamle
     - [`sortBy`](#sortby)
     - [`union`](#union)
     - [`unique`](#unique)
+    - [`zip`](#zip)
   - [Numbers](#numbers)
     - [`clamp`](#clamp)
+    - [`currency`](#currency)
     - [`int`](#int)
   - [Objects](#objects)
     - [`merge`](#merge)
@@ -240,9 +242,26 @@ const unique = supasut.unique(arr);
 console.log(unique); // [1, 2, 3, 4, 5]
 ```
 
+#### `zip`
+
+Combines multiple arrays element-wise into an array of tuples.
+
+```js
+const array1 = [1, 2, 3];
+const array2 = ["a", "b", "c"];
+const array3 = [true, false, true];
+
+const result = supasut.zip(array1, array2, array3);
+
+console.log(result);
+// [[1, "a", true], [2, "b", false], [3, "c", true]]
+```
+
 ### Number
 
 #### `clamp`
+
+Clamps a number within a specified range.
 
 ```js
 const min = 1;
@@ -250,10 +269,24 @@ const max = 100;
 
 const randomNumber = supasut.clamp(50, min, max);
 
-console.log(randomNumber); // Output: 50 (as 50 is within the range 1 to 100)
+console.log(randomNumber); // 50 (as 50 is within the range 1 to 100)
+```
+
+#### `currency`
+
+Formats a number as a currency string.
+
+```js
+const price = 1234567.89;
+
+const formattedPrice = supasut.currency(price, ".", ",");
+
+console.log(formattedPrice); // "1.234.567,89"
 ```
 
 #### `int`
+
+Generates a random integer within a specified range.
 
 ```js
 const min = 1;
@@ -274,7 +307,7 @@ Merges two or more objects into a new object.
 const obj1 = { name: "John", age: 30 };
 const obj2 = { country: "USA", occupation: "Engineer" };
 
-const mergedObject = merge(obj1, obj2);
+const mergedObject = supasut.merge(obj1, obj2);
 
 console.log(mergedObject);
 // { name: "John", age: 30, country: "USA", occupation: "Engineer" }
@@ -287,7 +320,7 @@ console.log(mergedObject);
 Generates a random color in the specified format.
 
 ```js
-const hslColor = color("hsl");
+const hslColor = supasut.color("hsl");
 
 console.log(hslColor); // e.g., "hsl(123.45, 67%, 89%)" (random color in HSL format)
 ```
