@@ -1,5 +1,12 @@
 # supasut
 
+## 0.7.0
+
+### Minor Changes
+
+- 271d620: zip
+  currency
+
 ## 0.6.2
 
 ### Patch Changes
