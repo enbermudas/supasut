@@ -1,5 +1,11 @@
 # supasut
 
+## 0.8.0
+
+### Minor Changes
+
+- 739cc68: fixes typpe of rollup output
+
 ## 0.7.0
 
 ### Minor Changes
