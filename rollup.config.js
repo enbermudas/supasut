@@ -6,7 +6,7 @@ module.exports = {
   output: [
     {
       file: pkg.main,
-      format: "es",
+      format: "commonjs",
       exports: "named",
       sourcemap: false,
     },
